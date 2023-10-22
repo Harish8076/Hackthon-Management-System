@@ -1,0 +1,173 @@
+.hero-container {
+    position: relative;
+}
+
+.hero-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: red;
+    font-size: 24px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin: 0;
+}
+/*registration page*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: absolute;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 500px;
+    margin-left:500px;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-divider {
+    border: 0.5px solid #16a085;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    width: 150px; /* Set the desired label width here */
+}
+
+
+.form-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+}
+
+.submit-button {
+    background-color: #16a085;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebar {
+    margin-left: 20px;
+}
+
+.sidebar-item {
+    margin-bottom: 20px;
+}
+
+/*no.of students*/
+.sidebarr{
+    margin-left: 000px;
+    position: absolute;
+    margin-top: 155px;
+    font-family: bold;
+    
+
+}
+
+
+
+
+.form-input:focus {
+    border-color: #16a085;
+    box-shadow: inset 0px 0px 2px 2px rgba(26, 188, 156, 0.25);
+}
+
+::selection {
+    background: rgba(26, 188, 156, 0.3);
+}
+
+
+
+
+
+
+/* Your existing CSS */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 24px; /* Decrease font size for smaller screens */
+    }
+
+    .hero-text h2 {
+        font-size: 18px; /* Decrease font size for smaller screens */
+    }
+
+    .form-input {
+        width: 100%; /* Make inputs fill the available width */
+    }
+
+    .sidebari {
+        width: 100%; /* Make the sidebar take full width on smaller screens */
+        text-align: center; /* Center text in the sidebar on smaller screens */
+        margin-bottom: 20px; /* Add some space at the bottom of the sidebar on smaller screens */
+    }
+}
+/* Your existing CSS */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .hero-text h2 {
+        font-size: 18px;
+    }
+
+    .form-input, #id1, #teamLeader, #projectTitle, #idea, [id^="student"] {
+        width: 100%; /* Make inputs and number fields fill the available width */
+    }
+
+    .sidebarr {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

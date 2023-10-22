@@ -1,0 +1,13 @@
+<app-head1></app-head1>
+<h1 style="margin-left: 200px;color:red;border-bottom: 5px solid black;width:300px;margin-top: 100px;margin-bottom: 50px;">Hackthon Projects</h1>
+<div class="container">
+    <div class="image-row" *ngFor="let row of getRows()">
+      <div class="idea" *ngFor="let idea of row">
+        <img class="idea-image" [src]="idea.image" alt="Idea Image">
+        <p>{{ idea.text }}</p>
+        <button class="vote-btn" (click)="vote(idea)">Vote</button>
+        <b><p style="color:white;padding: 5px;background-color: green;">Votes: {{ idea.votes }}</p></b>
+      </div>
+    </div>
+  </div>
+<app-footer></app-footer>

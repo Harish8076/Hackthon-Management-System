@@ -1,0 +1,100 @@
+/*
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #2d2e8c;
+    overflow: hidden;
+    text-align: right;
+    position: sticky;
+    top: 0;
+    margin: 0px;
+    z-index: 100;
+}
+
+.navbar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 23px 27px; /* Increase the padding by 5px /*
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.navbar a:last-child {
+    margin-right: 60px;
+}
+
+.navbar a:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Active link style 
+.navbar a.active {
+    border-bottom: 6px solid red; /* Underline style for active link 
+}
+
+*/
+
+
+
+-----or--------
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #2d2e8c;
+    overflow: hidden;
+    text-align: right;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    z-index: 100;
+}
+
+.navbar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px 25px; /* Adjusted padding for a balanced look */
+    text-decoration: none;
+    margin-right: 20px; /* Adjusted right margin for links */
+}
+
+.navbar a:last-child {
+    margin-right: 40px; /* Adjusted margin for the last link */
+}
+
+.navbar a:hover {
+    background-color: #0056b3;
+    color: white;
+}
+/* Your existing CSS */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        text-align: center;
+    }
+
+    .navbar a {
+        display: block;
+        width: 100%;
+        padding: 15px 0; /* Adjust padding for smaller screens */
+        margin: 5px 0; /* Adjust margin for smaller screens */
+    }
+
+    .navbar a:last-child {
+        margin-bottom: 20px; /* Adjust margin for the last link on smaller screens */
+    }
+}
