@@ -1,0 +1,31 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px
+  }
+  
+  .image-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px; /* Reduced padding */
+  }
+  
+  .idea {
+    text-align: center;
+    padding: 10px; /* Reduced padding */
+  }
+  
+  .idea-image {
+    width: 200px; /* Increased image size */
+    height: 200px; /* Increased image size */
+    object-fit: cover;
+  }
+  
+  .vote-btn {
+    margin-top: 5px; /* Reduced margin */
+    background-color: red;
+    padding: 6px;
+    border-radius: 5px;
+
+  }
+  

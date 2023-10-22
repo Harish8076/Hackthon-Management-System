@@ -1,0 +1,58 @@
+<app-head1></app-head1>
+
+<div class="hero-container">
+    <img src="https://media.istockphoto.com/id/1125107251/vector/hackathon-background-hack-marathon-coding-event-glitch-poster-and-saturated-binary-data-code.jpg?s=612x612&w=0&k=20&c=aqnvlYk_4_8qIQi8bUbg6LQeNBBl8c-FyuSPyXCNgro=" alt="Hero Image">
+    <div class="hero-text">
+        <h1>hackZone-A place To Find the beautiful Ideas</h1>
+        <h2>Learn-By Doing</h2>
+    </div>
+</div>
+<div class="container">
+    <div class="sidebarr">
+        <div class="sidebari">
+            <label for="id1"><b>Number of Students</b></label><br>
+            <input type="number" id="id1" [(ngModel)]="numberOfFields" (input)="generateInputFields()" class="form-input" style="width: 480px;" placeholder="Ex:-1">
+        </div>
+    </div>
+    
+    <form class="form">
+        <div class="form-header">
+            <h2>Team Registration</h2>
+            <hr class="form-divider">
+        </div>
+        <div class="form-group">
+            <label for="teamLeader">Team Leader</label>
+            <input type="text" id="teamLeader" name="teamLeader" class="form-input" required>
+        </div>
+        <div>
+            
+            <pre>
+
+         </pre>
+        </div>
+
+        <div id="res" class="form-group">
+            <div *ngFor="let field of inputFields; let i = index" class="form-row">
+                <label for="student{{ i + 1 }}">Student {{ i + 1 }}</label>
+                <input type="text" [placeholder]="field" id="student{{ i + 1 }}" class="form-input" required >
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="projectTitle">Title of Project</label>
+            <input type="text" id="projectTitle" name="projectTitle" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+            <label for="idea">Idea</label>
+            <input type="text" id="idea" name="idea" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" class="submit-button" value="Submit">
+        </div>
+    </form>
+</div>
+
+
+<app-footer>
